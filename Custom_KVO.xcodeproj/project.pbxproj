@@ -16,6 +16,10 @@
 		C560880526550A5F00E55900 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C560880426550A5F00E55900 /* main.m */; };
 		C560880F26550A5F00E55900 /* Custom_KVOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C560880E26550A5F00E55900 /* Custom_KVOTests.m */; };
 		C560881A26550A5F00E55900 /* Custom_KVOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C560881926550A5F00E55900 /* Custom_KVOUITests.m */; };
+		C560882926550F5200E55900 /* LCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C560882826550F5200E55900 /* LCPerson.m */; };
+		C560882C2655F96800E55900 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = C560882B2655F96800E55900 /* NSObject+KVO.m */; };
+		C560882F26563EB600E55900 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C560882E26563EB600E55900 /* KVOViewController.m */; };
+		C560883226563F2800E55900 /* LCKVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C560883126563F2800E55900 /* LCKVOModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,14 @@
 		C560881526550A5F00E55900 /* Custom_KVOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Custom_KVOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C560881926550A5F00E55900 /* Custom_KVOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Custom_KVOUITests.m; sourceTree = "<group>"; };
 		C560881B26550A5F00E55900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C560882726550F5200E55900 /* LCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCPerson.h; sourceTree = "<group>"; };
+		C560882826550F5200E55900 /* LCPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCPerson.m; sourceTree = "<group>"; };
+		C560882A2655F96800E55900 /* NSObject+KVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
+		C560882B2655F96800E55900 /* NSObject+KVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
+		C560882D26563EB600E55900 /* KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		C560882E26563EB600E55900 /* KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		C560883026563F2800E55900 /* LCKVOModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCKVOModel.h; sourceTree = "<group>"; };
+		C560883126563F2800E55900 /* LCKVOModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCKVOModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,11 +122,19 @@
 				C56087F626550A5D00E55900 /* SceneDelegate.m */,
 				C56087F826550A5D00E55900 /* ViewController.h */,
 				C56087F926550A5D00E55900 /* ViewController.m */,
+				C560882D26563EB600E55900 /* KVOViewController.h */,
+				C560882E26563EB600E55900 /* KVOViewController.m */,
+				C560882726550F5200E55900 /* LCPerson.h */,
+				C560882826550F5200E55900 /* LCPerson.m */,
+				C560883026563F2800E55900 /* LCKVOModel.h */,
+				C560883126563F2800E55900 /* LCKVOModel.m */,
 				C56087FB26550A5D00E55900 /* Main.storyboard */,
 				C56087FE26550A5F00E55900 /* Assets.xcassets */,
 				C560880026550A5F00E55900 /* LaunchScreen.storyboard */,
 				C560880326550A5F00E55900 /* Info.plist */,
 				C560880426550A5F00E55900 /* main.m */,
+				C560882A2655F96800E55900 /* NSObject+KVO.h */,
+				C560882B2655F96800E55900 /* NSObject+KVO.m */,
 			);
 			path = Custom_KVO;
 			sourceTree = "<group>";
@@ -268,8 +288,12 @@
 			files = (
 				C56087FA26550A5D00E55900 /* ViewController.m in Sources */,
 				C56087F426550A5D00E55900 /* AppDelegate.m in Sources */,
+				C560882C2655F96800E55900 /* NSObject+KVO.m in Sources */,
+				C560882926550F5200E55900 /* LCPerson.m in Sources */,
 				C560880526550A5F00E55900 /* main.m in Sources */,
+				C560882F26563EB600E55900 /* KVOViewController.m in Sources */,
 				C56087F726550A5D00E55900 /* SceneDelegate.m in Sources */,
+				C560883226563F2800E55900 /* LCKVOModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -428,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -449,7 +473,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "chao.Custom-KVO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -466,7 +490,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "chao.Custom-KVO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
